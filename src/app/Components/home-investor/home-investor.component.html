@@ -1,0 +1,185 @@
+<link
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  rel="stylesheet"
+/>
+
+<input
+  type="text"
+  id="myInput"
+  onkeyup="filterUsers($event.target.value)"
+  placeholder="Search"
+  class="search"
+/>
+<!-- user-list.component.html -->
+
+<a class="img-S btn behind" routerLink="/profile-investor">
+  <img
+    src="https://i.imgur.com/UXdKE3o.jpg"
+    alt="n"
+    width="75"
+    class="rounded-circle"
+  />
+</a>
+
+<!-- <div class="d-flex">
+  <div class="dropdown me-1">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+      Offset
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-secondary">Reference</button>
+    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+</div> -->
+ <div class="container1 p-5">
+
+  <button class=" button btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+  Category Of Posts
+
+  </button>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">AllIdeas</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Financial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tecnology</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Medicine</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Arts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Engineering</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Social Media</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Commerce</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Manual Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+
+  </div>
+</div>
+
+
+<div class="container">
+  <div id="main-content" class="blog-page">
+    <div class="container">
+      <div class="row clearfix">
+        <div class="col-lg-8 col-md-12 left-box">
+          <div class="container mt-5 mb-5">
+            <div class="row d-flex align-items-center justify-content-center">
+              <div class="col-md-6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="panel">
+        <div class="panel-body">
+          <div class="fb-user-thumb">
+            <img src="../../../assets/Images/person2.avif" alt="" />
+          </div>
+          <div class="fb-user-details">
+            <h3><a href="#" class="name">Margarita Elina</a></h3>
+          </div>
+          <div class="clearfix"></div>
+          <p class="fb-user-status">
+            John is world famous professional photographer. with forward
+            thinking clients to create beautiful, honest and amazing things that
+            bring positive results. John is world famous professional
+            photographer. with forward thinking clients to create beautiful,
+            honest and amazing things that bring positive results.
+          </p>
+          <img
+            src="../../../assets/Images/wallpaperflare.com_wallpaper (1).jpg"
+            class="figure"
+          />
+          <div class="fb-status-container fb-border">
+            <div class="fb-time-action">
+              <button class="a btn btn-outline-dark">Like</button>
+              <button class="a btn btn-outline-dark">Comment</button>
+              <!-- <button class="a btn btn-outline-dark">Connect</button> -->
+              <button
+                (click)="redirectToAnotherPage()"
+                class="a btn btn-outline-dark"
+              >
+                SendOffer
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right col-md-4 bg-light">
+      <h5>others youth</h5>
+      <hr />
+      <div class="fb-user-thumb">
+        <img src="../../../assets/Images/person1.avif" alt="" />
+      </div>
+      <div class="fb-user-details">
+        <h3><a href="#" class="name">William Shaker</a></h3>
+        <h6>Front End</h6>
+      </div>
+      <button
+        class="BB btn btn-outline-success pull-right bg-gray text-bg-dark top-50"
+      >
+        Connect
+      </button>
+      <br />
+      <hr />
+      <div class="fb-user-thumb">
+        <img src="../../../assets/Images/person1.avif" alt="" />
+      </div>
+      <div class="fb-user-details">
+        <h3><a href="#" class="name">William Shaker</a></h3>
+        <h6>Front End</h6>
+      </div>
+      <button
+        class="BB btn btn-outline-success pull-right bg-gray text-bg-dark top-50"
+      >
+        Connect
+      </button>
+    </div>
+  </div>
+</div>
+

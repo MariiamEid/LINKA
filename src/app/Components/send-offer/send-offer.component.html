@@ -1,0 +1,36 @@
+
+<form class="form-container" [formGroup]="userForm" (ngSubmit)="submitForm()">
+
+  <label for="image">Image</label>
+  <input type="file" id="image" placeholder="Image" formControlName="image" />
+
+  <label for="price"> Price </label>
+  <input type="char" id="price" placeholder="Price" formControlName="price" />
+
+  <label for="profitrate">ProfitRate</label>
+  <input
+    type="char"
+    id="profitrate"
+    placeholder="ProfitRate"
+    formControlName="profitrate"
+  />
+
+
+  <label for="description">Description</label>
+  <textarea
+    type="message"
+    id="description"
+    placeholder="Description"
+    formControlName="description"
+  ></textarea>
+
+  <label for="nationalid">NationalId</label>
+  <input
+    type="number"
+    id="nationalid"
+    placeholder="NationalId"
+    formControlName="nationalid"
+  />
+
+  <button type="submit">Submit</button>
+</form>
